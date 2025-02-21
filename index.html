@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prestasi Moklet </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+        .navbar {
+            background-color: #ff1493 !important;
+        }
+        .navbar .container-fluid {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-brand {
+            margin: auto;
+            color: white !important;
+        }
+        .prestasi-list .btn {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            border-color: #ff1493;
+            color: #ff1493;
+            border-radius: 25px;
+            padding: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .prestasi-list .btn:hover {
+            background-color: #ff1493;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .video-container {
+            background: #ff69b4;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            display: block;
+            color: white;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            from { transform: translateX(0%); }
+            to { transform: translateX(-100%); }
+        }
+        footer {
+            background-color: #ff1493;
+        }
+    </style>
+    <script>
+        function changeVideo(url) {
+            let videoFrame = document.getElementById('videoFrame');
+            videoFrame.src = url + "?autoplay=1&rel=0";
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Study with Xaviera Putri!!🔥</a>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 video-container">
+                <iframe id="videoFrame" width="100%" height="500" src="https://www.youtube.com/embed/OPPDwqAom3A?si=jNlDWsSVzAzG8aM0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4">
+                <div class="prestasi-list">
+                    <button class="btn btn-outline-primary" onclick="changeVideo('https://www.youtube.com/embed/iW95JcrOoGc?si=k2BSNsCikdbfM3kB')">Prestasi 1</button>
+                    <button class="btn btn-outline-primary" onclick="changeVideo('https://www.youtube.com/embed/ct2VfNe3FFE?si=kGFnMF8blWy5DkgG')">Prestasi 2</button>
+                    <button class="btn btn-outline-primary" onclick="changeVideo('https://www.youtube.com/embed/QFLAuddS6qM?si=pvD361zDhWR-8xsm')">Prestasi 3</button>
+                    <button class="btn btn-outline-primary" onclick="changeVideo('https://www.youtube.com/embed/jTBy1ujJuUE?si=E6FhGMhN4uHSgMhZ')">Prestasi 4</button>
+                    <button class="btn btn-outline-primary" onclick="changeVideo('https://www.youtube.com/embed/t1biwE-EWJQ?si=FelSAOXM_D7uRXEV')">Prestasi 5</button>
+                    <button class="btn btn-outline-primary" onclick="changeVideo('https://www.youtube.com/embed/lfRQspHx2Hg?si=HToe4-X7RqT4BRw4')">Prestasi 6</button>
+                    <button class="btn btn-outline-primary" onclick="changeVideo('https://www.youtube.com/embed/MHQq1I8EQYc?si=dHPbGXLRus-xztN4')">Prestasi 7</button>
+                    <button class="btn btn-outline-primary" onclick="changeVideo('https://www.youtube.com/embed/tUnDGQ_B69k?si=Uoo4J01o6ahabdio')">Prestasi 9</button>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-white text-center p-2 mt-3">
+        <div class="marquee">
+            <span>Selamat Datang di Website Study Guide with Xaviera! 🤍</span>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
